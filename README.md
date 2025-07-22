@@ -28,7 +28,7 @@ Chạy  file jupyter notebook
 ### 1. Local Search (`local_search.py`) - Main
 - **Mục đích:**
   - Tìm ra optimal offloading decisions và resource allocation.
-  - Kết hợp với thuật toán [Bi-search](mecoptimaloffloading/algorithms/bi_search.py), hoặc [đề mục 2. Bi-Search bên dưới](#2-bi-search-bipy), để tối ưu hóa optimal energy-time, từ đó allocate resource tốt nhất.
+  - Kết hợp với thuật toán [Bi-search](mecoptimaloffloading/algorithms/bi_search.py), hoặc [2. Bi-Search](#2-bi-search-bipy), để tối ưu hóa optimal energy-time, từ đó allocate resource tốt nhất.
   - Thực hiện qua nhiều vòng lặp, sau mỗi vòng sẽ so sánh energy-time cost để xác định best optimal offloading solution và allocate offload-local resources(1-offload, 0-local) hợp lý.
 - **Khi sử dụng:**
   - Khi cần giải pháp nhanh, chấp nhận nghiệm gần tối ưu.
