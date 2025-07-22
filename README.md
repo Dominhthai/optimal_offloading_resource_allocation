@@ -17,51 +17,51 @@
 
 ---
 
-## ⚙️ Hướng dẫn cài đặt
+## ⚙️ Hướng dẫn chạy code
 
-Chạy từng cell trong jupyter notebook
+Chạy  file jupyter notebook
 
 ---
 
-## 🧩 Hướng dẫn chạy các thuật toán
+## 🧩 Phân tích các file chạy các thuật toán (bi search, local search và naive search)
 
 ### 1. Local Search (`local_search.py`) - Main
 - **Mục đích:**
   - Tìm ra optimal offloading decisions và resource allocation.
-  - Kết hợp với thuật toán Bi-search(link đến file test_bi_search.py, hoặc đề mục số 2.Bi-search bên dưới),để tìm optimal energy-time, nhằm allocate resource tốt nhất.
-  - Chạy một số vòng lặp, sau mỗi vòng lặp, so sánh energy-time cost để decide best optimal offloading solution và allocate offload-local resources(1-offload, 0-loca) hợp lý.
+  - Kết hợp với thuật toán [Bi-search](mecoptimaloffloading/algorithms/bi_search.py) ([tham khảo file](mecoptimaloffloading/algorithms/bi_search.py), hoặc [đề mục 2. Bi-Search bên dưới](#2-bi-search-bipy)), để tối ưu hóa optimal energy-time, từ đó allocate resource tốt nhất.
+  - Thực hiện qua nhiều vòng lặp, sau mỗi vòng sẽ so sánh energy-time cost để xác định best optimal offloading solution và allocate offload-local resources(1-offload, 0-local) hợp lý.
 - **Khi sử dụng:**
   - Khi cần giải pháp nhanh, chấp nhận nghiệm gần tối ưu.
   - Khi không gian nghiệm lớn, vét cạn không khả thi.
 - **Chạy thử:**
   Tại file .ipynb, thay `test_file_path = '/content/MECOptimalOffloading/mecoptimaloffloading/tests/test_local_search.py'`
 - **Kết quả:**
-  - Kết quả chạy xuất ra màn hình gồm có: 1 dictionary: 2 offloading decisions tương ứng cho WD1 và WD2; và energy-time cost của WD1 và WD2.
+  - Kết quả chạy xuất ra màn hình gồm có: 1 dictionary gồm 2 offloading decisions tương ứng cho WD1 và WD2; cùng energy-time cost của WD1 và WD2 tương ứng.
 
 ### 2. Bi-Search (`bi_search.py`)
 - **Mục đích:**
   - Tìm ra optimal energy-time.
   - Offloading decision được giả thiết là đã được cho sẵn (given) - bằng cách sinh ngẫu nhiên.
-  - Chạy file trong trường hợp muốn thử nghiệm và quan sát sự thay đổi energy-time, khi beta2_t thay đổi.
+  - Chạy file trong trường hợp muốn thử nghiệm và quan sát sự thay đổi energy-time, khi \(\beta_{2,t}\) thay đổi.
 - **Khi sử dụng:**
   - Khi muốn cân bằng giữa tốc độ và chất lượng nghiệm.
   - Khi cần so sánh hiệu quả với local search và naive search.
 - **Chạy thử:**
   Tại file .ipynb, thay `test_file_path = '/content/MECOptimalOffloading/mecoptimaloffloading/tests/test_bi_search.py'`
 - **Kết quả:**
-  - Kết quả được trực quan hóa bằng matplotlib, thể hiện mối quan hệ giữa energy và time với beta2_t tương ứng của WD1 và WD2.
+  - Kết quả được trực quan hóa bằng matplotlib, thể hiện mối quan hệ giữa energy và time với \(\beta_{2,t}\) tương ứng của WD1 và WD2.
 
 ### 3. Naive Search (`naive_search.py`)
 - **Mục đích:**
   - Tìm kiếm vét cạn toàn bộ không gian nghiệm để tìm ra optimal solutions.
-  - Duyệt tất cả các optimal decisions khả thi (2^(M+N) choices), từ đó tìm được best offloading decisions/energy-time cost.
+  - Duyệt tất cả các optimal decisions khả thi \(2^{M+N}\) choices, từ đó tìm được best offloading decisions/energy-time cost.
 - **Khi sử dụng:**
   - Khi muốn kiểm tra nghiệm tối ưu thực sự (benchmark cho các thuật toán khác).
   - Khi không gian nghiệm nhỏ (vì độ phức tạp cao).
 - **Chạy thử:**
   Tại file .ipynb, thay `test_file_path = '/content/MECOptimalOffloading/mecoptimaloffloading/tests/test_naive_search.py'`
 - **Kết quả:**
-  - Kết quả chạy xuất ra màn hình gồm có: 1 dictionary: 2 offloading decisions tương ứng cho WD1 và WD2; và energy-time cost của WD1 và WD2.
+  - Kết quả chạy xuất ra màn hình gồm có: 1 dictionary: 2 offloading decisions tương ứng cho WD1 và WD2; cùng energy-time cost của WD1 và WD2 tương ứng.
 
 ---
 
