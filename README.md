@@ -19,18 +19,7 @@
 
 ## ⚙️ Hướng dẫn cài đặt
 
-1. **Clone repository:**
-   ```bash
-   git clone <repo_url>
-   cd MECOptimalOffloading
-   ```
-2. **Cài đặt môi trường Python:**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # (Linux/macOS)
-   venv\Scripts\activate    # (Windows)
-   pip install -r requirements.txt  # (nếu có)
-   ```
+Chạy từng cell trong jupyter notebook
 
 ---
 
@@ -38,13 +27,13 @@
 
 ### 1. Naive Search (`naive_search.py`)
 - **Mục đích:**
-  - Tìm kiếm vét cạn toàn bộ không gian nghiệm để tìm ra giải pháp tối ưu tuyệt đối.
+  - Tìm kiếm vét cạn toàn bộ không gian nghiệm để tìm ra optimal offloading decisions.
 - **Khi sử dụng:**
   - Khi muốn kiểm tra nghiệm tối ưu thực sự (benchmark cho các thuật toán khác).
   - Khi không gian nghiệm nhỏ (vì độ phức tạp cao).
 - **Chạy thử:**
-  ```bash
-  python -m mecoptimaloffloading.algorithms.naive_search
+  Thay ```bash
+  test_file_path
   ```
 
 ### 2. Local Search (`local_search.py`)
