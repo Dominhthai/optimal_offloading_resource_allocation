@@ -42,19 +42,19 @@ Chạy  file jupyter notebook
 - **Mục đích:**
   - Tìm ra optimal energy-time.
   - Offloading decision được giả thiết là đã được cho sẵn (given) - bằng cách sinh ngẫu nhiên.
-  - Chạy file trong trường hợp muốn thử nghiệm và quan sát sự thay đổi energy-time, khi \(\beta_{2,t}\) thay đổi.
+  - Chạy file trong trường hợp muốn thử nghiệm và quan sát sự thay đổi energy-time, khi beta2_t thay đổi.
 - **Khi sử dụng:**
   - Khi muốn cân bằng giữa tốc độ và chất lượng nghiệm.
   - Khi cần so sánh hiệu quả với local search và naive search.
 - **Chạy thử:**
   Tại file .ipynb, thay `test_file_path = '/content/MECOptimalOffloading/mecoptimaloffloading/tests/test_bi_search.py'`
 - **Kết quả:**
-  - Kết quả được trực quan hóa bằng matplotlib, thể hiện mối quan hệ giữa energy và time với \(\beta_{2,t}\) tương ứng của WD1 và WD2.
+  - Kết quả được trực quan hóa bằng matplotlib, thể hiện mối quan hệ giữa energy và time với beta2_t tương ứng của WD1 và WD2.
 
 ### 3. Naive Search (`naive_search.py`)
 - **Mục đích:**
   - Tìm kiếm vét cạn toàn bộ không gian nghiệm để tìm ra optimal solutions.
-  - Duyệt tất cả các optimal decisions khả thi \(2^{M+N}\) choices, từ đó tìm được best offloading decisions/energy-time cost.
+  - Duyệt tất cả các optimal decisions khả thi 2^{M+N} choices, từ đó tìm được best offloading decisions/energy-time cost.
 - **Khi sử dụng:**
   - Khi muốn kiểm tra nghiệm tối ưu thực sự (benchmark cho các thuật toán khác).
   - Khi không gian nghiệm nhỏ (vì độ phức tạp cao).
