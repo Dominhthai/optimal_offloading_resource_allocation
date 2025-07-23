@@ -2,11 +2,11 @@
 
 ## 🚀 Giới thiệu
 
-**MECOptimalOffloading** là một dự án mô phỏng và tối ưu hóa quá trình offloading trong hệ thống điện toán biên di động (Mobile Edge Computing - MEC). Dự án cung cấp ba thuật toán chính để giải quyết bài toán tối ưu hóa: **Naive Search**, **Local Search**, và **Bi-Search**.
-
+**MECOptimalOffloading** là một dự án mô phỏng và tối ưu hóa quá trình offloading trong hệ thống điện toán biên di động (Mobile Edge Computing - MEC). Dự án cung cấp thuật toán chính để giải quyết bài toán tối ưu hóa:**Local Search**
 ---
 
 ## 📂 Cấu trúc thư mục
+Cung cấp 3 thuật toán
 
 - `mecoptimaloffloading/algorithms/`
   - `naive_search.py`: Thuật toán tìm kiếm vét cạn (Naive Search)
