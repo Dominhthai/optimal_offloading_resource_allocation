@@ -2,7 +2,7 @@
 
 ## 🚀 Giới thiệu
 
-**MECOptimalOffloading** là một dự án mô phỏng và tối ưu hóa quá trình offloading trong hệ thống điện toán biên di động (Mobile Edge Computing - MEC). Dự án cung cấp thuật toán chính để giải quyết bài toán tối ưu hóa:**Local Search**
+**MECOptimalOffloading** là một dự án mô phỏng và tối ưu hóa quá trình offloading trong hệ thống điện toán biên di động (Mobile Edge Computing - MEC). Dự án cung cấp thuật toán chính để giải quyết bài toán tối ưu hóa: **Local Search**. 
 ---
 
 ## 📂 Cấu trúc thư mục
